@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">413408776539-mn1mss0tggh0e7b975eq7ldmj0glhujl.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://capstone-383bc-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">413408776539</string>
+    <string name="google_api_key" translatable="false">AIzaSyCgF0QKC03qShv62-ovt9D933Nq-k44hAM</string>
+    <string name="google_app_id" translatable="false">1:413408776539:android:174a2c464b04e16aa94a7e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCgF0QKC03qShv62-ovt9D933Nq-k44hAM</string>
+    <string name="google_storage_bucket" translatable="false">capstone-383bc.appspot.com</string>
+    <string name="project_id" translatable="false">capstone-383bc</string>
+</resources>

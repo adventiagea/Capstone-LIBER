@@ -1,0 +1,2 @@
+com/dicoding/picodiploma/capstone/BuildConfig.java
+ com.dicoding.picodiploma.capstone.BuildConfig
