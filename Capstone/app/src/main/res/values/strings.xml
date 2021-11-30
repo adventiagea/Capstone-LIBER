@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">LIBER</string>
     <string name="liber">liber</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>

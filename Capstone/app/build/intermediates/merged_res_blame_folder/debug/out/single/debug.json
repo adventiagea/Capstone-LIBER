@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_login.png.flat",
         "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\bg_login.png"
+    },
+    {
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

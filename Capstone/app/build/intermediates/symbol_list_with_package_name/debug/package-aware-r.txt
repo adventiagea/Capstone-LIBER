@@ -1896,6 +1896,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id UsernameInput
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1983,6 +1984,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2057,6 +2059,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTextTextPassword2
 id edit_query
 id elastic
 id end
@@ -2263,6 +2266,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id sign_in
 id sin
 id skipCollapsed
 id skipped
@@ -2607,7 +2611,6 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string liber
-string lol
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_selection
@@ -2663,6 +2666,7 @@ string mtrl_picker_toggle_to_calendar_input_mode
 string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2670,7 +2674,9 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string sign_in
 string status_bar_notification_info_overflow
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
