@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "413408776539",
+    "firebase_url": "https://capstone-383bc-default-rtdb.firebaseio.com",
+    "project_id": "capstone-383bc",
+    "storage_bucket": "capstone-383bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413408776539:android:174a2c464b04e16aa94a7e",
+        "android_client_info": {
+          "package_name": "com.dicoding.picodiploma.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413408776539-mn1mss0tggh0e7b975eq7ldmj0glhujl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgF0QKC03qShv62-ovt9D933Nq-k44hAM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413408776539-mn1mss0tggh0e7b975eq7ldmj0glhujl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
