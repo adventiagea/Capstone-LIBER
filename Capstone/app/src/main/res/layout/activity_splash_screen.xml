@@ -8,23 +8,29 @@
 
     <ImageView
         android:id="@+id/liber_logo_sc"
-        android:layout_width="330dp"
-        android:layout_height="292dp"
+        android:layout_width="151dp"
+        android:layout_height="151dp"
         android:src="@drawable/logo"
-        tools:ignore="ContentDescription"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="383dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.451"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/liber_text_sc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
         android:fontFamily="@font/pacifico_regular"
         android:text="@string/liber"
         android:textColor="@color/general"
         android:textSize="72sp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="177dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/liber_logo_sc"
+        app:layout_constraintStart_toStartOf="@+id/liber_logo_sc"
+        app:layout_constraintTop_toTopOf="@+id/liber_logo_sc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
