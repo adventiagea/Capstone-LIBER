@@ -10,7 +10,7 @@
         android:id="@+id/liber_logo_sc"
         android:layout_width="151dp"
         android:layout_height="151dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/liber_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.25"
