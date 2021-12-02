@@ -13,9 +13,6 @@ class UserActivity : AppCompatActivity() {
         userBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(userBinding.root)
 
-        actionBar?.title = resources.getString(R.string.liber)
-
-
 
     }
 }
