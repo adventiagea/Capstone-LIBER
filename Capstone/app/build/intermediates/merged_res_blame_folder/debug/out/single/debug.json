@@ -1,5 +1,13 @@
 [
     {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_person.png.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\person.png"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_person.png.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\img_person.png"
+    },
+    {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user.xml.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
@@ -34,6 +42,10 @@
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",

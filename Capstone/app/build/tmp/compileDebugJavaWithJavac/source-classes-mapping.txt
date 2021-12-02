@@ -1,7 +1,7 @@
-com/dicoding/picodiploma/capstone/databinding/ActivitySplashScreenBinding.java
- com.dicoding.picodiploma.capstone.databinding.ActivitySplashScreenBinding
 com/dicoding/picodiploma/capstone/BuildConfig.java
  com.dicoding.picodiploma.capstone.BuildConfig
+com/dicoding/picodiploma/capstone/databinding/ActivitySplashScreenBinding.java
+ com.dicoding.picodiploma.capstone.databinding.ActivitySplashScreenBinding
 com/dicoding/picodiploma/capstone/databinding/ActivityLoginBinding.java
  com.dicoding.picodiploma.capstone.databinding.ActivityLoginBinding
 com/dicoding/picodiploma/capstone/databinding/ActivityUserBinding.java

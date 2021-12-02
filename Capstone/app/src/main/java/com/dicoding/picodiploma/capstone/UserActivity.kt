@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toolbar
+import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.capstone.databinding.ActivityUserBinding
 
 class UserActivity : AppCompatActivity() {
@@ -27,6 +28,15 @@ class UserActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             myToolbar.overflowIcon = iconToolbar
         }
+
+        /*
+        userBinding.apply {
+            Glide.with(this@UserActivity)
+                .load(R.drawable.person)
+                .into(image)
+        }
+
+         */
 
     }
 
