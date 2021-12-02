@@ -4,6 +4,8 @@ package com.dicoding.picodiploma.capstone.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,16 +23,33 @@ public final class ActivityLoginBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final EditText UsernameInput;
+
+  @NonNull
+  public final Button button;
+
+  @NonNull
+  public final EditText editTextTextPassword2;
+
+  @NonNull
   public final TextView liberTextSc;
 
   @NonNull
   public final ImageView loginBg;
 
-  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView liberTextSc,
-      @NonNull ImageView loginBg) {
+  @NonNull
+  public final TextView signIn;
+
+  private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull EditText UsernameInput,
+      @NonNull Button button, @NonNull EditText editTextTextPassword2,
+      @NonNull TextView liberTextSc, @NonNull ImageView loginBg, @NonNull TextView signIn) {
     this.rootView = rootView;
+    this.UsernameInput = UsernameInput;
+    this.button = button;
+    this.editTextTextPassword2 = editTextTextPassword2;
     this.liberTextSc = liberTextSc;
     this.loginBg = loginBg;
+    this.signIn = signIn;
   }
 
   @Override
@@ -60,6 +79,24 @@ public final class ActivityLoginBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.UsernameInput;
+      EditText UsernameInput = ViewBindings.findChildViewById(rootView, id);
+      if (UsernameInput == null) {
+        break missingId;
+      }
+
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
+        break missingId;
+      }
+
+      id = R.id.editTextTextPassword2;
+      EditText editTextTextPassword2 = ViewBindings.findChildViewById(rootView, id);
+      if (editTextTextPassword2 == null) {
+        break missingId;
+      }
+
       id = R.id.liber_text_sc;
       TextView liberTextSc = ViewBindings.findChildViewById(rootView, id);
       if (liberTextSc == null) {
@@ -72,7 +109,14 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, liberTextSc, loginBg);
+      id = R.id.sign_in;
+      TextView signIn = ViewBindings.findChildViewById(rootView, id);
+      if (signIn == null) {
+        break missingId;
+      }
+
+      return new ActivityLoginBinding((ConstraintLayout) rootView, UsernameInput, button,
+          editTextTextPassword2, liberTextSc, loginBg, signIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

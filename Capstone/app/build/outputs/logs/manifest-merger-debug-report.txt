@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\asus\.gradle\caches\transforms-3\157d92d4863206c3c9b16f53530e6411\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0] C:\Users\asus\.gradle\caches\transforms-3\9e1c59eca4506469feedeaae7bf6c45f\transformed\jetified-lifecycle-viewmodel-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.4.0] C:\Users\asus\.gradle\caches\transforms-3\b12dff2ca80a7e78a274e1da6ceb608e\transformed\jetified-lifecycle-livedata-ktx-2.4.0\AndroidManifest.xml:17:1-24:12
@@ -88,25 +88,25 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\asus\.gradle\caches\transforms
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\asus\.gradle\caches\transforms-3\a4afedf8a39a596e383b921d3cb53d74\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\asus\.gradle\caches\transforms-3\bfdf5b4a95dda39c8872c10fd49a60cd\transformed\jetified-grpc-android-1.41.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\asus\.gradle\caches\transforms-3\49b1b4f01a3b51d13b47b15257c0fc89\transformed\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:5:5-28:19
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:5:5-30:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\asus\.gradle\caches\transforms-3\85d28c44b86a0d7daf82e0bd918708c8\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\asus\.gradle\caches\transforms-3\85d28c44b86a0d7daf82e0bd918708c8\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.2] C:\Users\asus\.gradle\caches\transforms-3\14d6c6f070020c2410684418a5d52eab\transformed\constraintlayout-2.1.2\AndroidManifest.xml:9:5-20
@@ -186,33 +186,39 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\asus\.gradle\
 	android:allowBackup
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:11:9-46
-activity#com.dicoding.picodiploma.capstone.LoginActivity
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:12:9-15:71
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:11:9-65
+activity#com.dicoding.picodiploma.capstone.UserActivity
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:12:9-15:15
 	android:exported
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:14:13-36
-	android:theme
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:15:13-69
 	android:name
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:13:13-42
-activity#com.dicoding.picodiploma.capstone.SplashScreenActivity
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:16:9-27:20
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:13:13-41
+activity#com.dicoding.picodiploma.capstone.LoginActivity
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:16:9-19:72
 	android:exported
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:18:13-36
 	android:theme
 		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:19:13-69
 	android:name
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:17:13-49
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:17:13-42
+activity#com.dicoding.picodiploma.capstone.SplashScreenActivity
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:20:9-29:20
+	android:exported
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:22:13-36
+	android:theme
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:23:13-69
+	android:name
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:21:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml:27:27-74
 uses-sdk
 INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\a\Capstone-LIBER\Capstone\app\src\main\AndroidManifest.xml

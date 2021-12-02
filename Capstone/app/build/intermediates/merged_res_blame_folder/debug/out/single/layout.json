@@ -1,5 +1,9 @@
 [
     {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user.xml",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
+    },
+    {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },

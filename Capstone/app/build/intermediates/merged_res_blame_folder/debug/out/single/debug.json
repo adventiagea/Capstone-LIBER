@@ -1,7 +1,7 @@
 [
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
@@ -12,16 +12,8 @@
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_login.png.flat",
@@ -40,36 +32,68 @@
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_logo.png.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\liber_logo.png"
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_rectangle.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\login_rectangle.xml"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_lato_regular.ttf.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\font\\lato_regular.ttf"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_setting.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_setting.xml"
+    },
+    {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_logo.png.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\liber_logo.png"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_button.xml.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\liber_button.xml"
+    },
+    {
+        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_pacifico_regular.ttf.flat",
