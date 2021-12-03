@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Akhne/Desktop/Capstone1/Capstone/app/src/main/res/drawable/login_rectangle.xml" value="0.2703125" />
         <entry key="..\:/Users/Akhne/Desktop/Capstone1/Capstone/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Akhne/Desktop/Capstone1/Capstone/app/src/main/res/layout/activity_pertemuan_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Akhne/Desktop/Capstone1/Capstone/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Akhne/Desktop/Capstone1/Capstone/app/src/main/res/layout/list_pertemuan.xml" value="0.25416666666666665" />
         <entry key="..\:/a/Capstone-LIBER/Capstone/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.290625" />
         <entry key="..\:/a/Capstone-LIBER/Capstone/app/src/main/res/drawable/liber_button.xml" value="0.290625" />
         <entry key="..\:/a/Capstone-LIBER/Capstone/app/src/main/res/drawable/login_rectangle.xml" value="0.290625" />

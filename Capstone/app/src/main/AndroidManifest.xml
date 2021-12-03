@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".PertemuanListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pertemuan_list"
+            android:theme="@style/NoActionBar" />
+        <activity
             android:name=".UserActivity"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"

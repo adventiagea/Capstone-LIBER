@@ -2,9 +2,10 @@
   <library name="Gradle: com.firebaseui:firebase-ui-storage:8.0.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e93c845358d1c56e0115c98706b9460/transformed/jetified-firebase-ui-storage-8.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6e29fb588196206f0537a5456b5c617a/transformed/jetified-firebase-ui-storage-8.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6e29fb588196206f0537a5456b5c617a/transformed/jetified-firebase-ui-storage-8.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6e29fb588196206f0537a5456b5c617a/transformed/jetified-firebase-ui-storage-8.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c7c4c5bd5628f7444a03828df146595/transformed/jetified-firebase-ui-storage-8.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3c7c4c5bd5628f7444a03828df146595/transformed/jetified-firebase-ui-storage-8.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3c7c4c5bd5628f7444a03828df146595/transformed/jetified-firebase-ui-storage-8.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.firebaseui/firebase-ui-storage/8.0.0/fb69c91e850651b1938e470c61193f47cf7e5c80/firebase-ui-storage-8.0.0-javadoc.jar!/" />

@@ -1,14 +1,14 @@
 [
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user.xml",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_user.xml",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
     }
 ]

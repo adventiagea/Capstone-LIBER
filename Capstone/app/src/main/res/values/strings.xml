@@ -8,4 +8,21 @@
 
     <string name="name_user">Name User</string>
     <string name="id_user">0001</string>
+    <string name="title_activity_pertemuan_list">PertemuanListActivity</string>
+
+    <string name="mata_kuliah">Kalkulus</string>
+    <string name="kode_kelas">A7</string>
+    <string name="hari">Senin</string>
+    <string name="name">Akhner Frisca</string>
+    <string name="border1">border!</string>
+    <string name="matkul">Kalkulus</string>
+    <string name="kelas">A7</string>
+    <string name="hariBorder">senin, 9:00 – 10:40</string>
+    <string name="namaBorder">Akhner Frisca</string>
+    <string name="hari_jam">senin, 9:00 – 10:40</string>
+    <string name="pertemuan">Pertemuan 1</string>
+    <string name="tanggal">6 desember 2021</string>
+    <string name="materi">Limit Fungsi</string>
+    <string name="status_kehadiran">status kehadiran:</string>
+
 </resources>

@@ -1,114 +1,122 @@
 [
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_person.png.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\person.png"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_person.png.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\img_person.png"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_user.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_pacifico_regular.ttf.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\font\\pacifico_regular.ttf"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_lato_regular.ttf.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\font\\lato_regular.ttf"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_login.png.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\bg_login.png"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_calendar.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\calendar.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_button.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\liber_button.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\menu\\menu.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_rectangle.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\login_rectangle.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_img_person.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\img_person.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_login_rectangle.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\login_rectangle.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_lato_regular.ttf.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\font\\lato_regular.ttf"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_logo.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\liber_logo.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_setting.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\ic_setting.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_setting.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\ic_setting.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_logo.png.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\liber_logo.png"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_bg_login.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\bg_login.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_person.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\person.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_liber_button.xml.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\drawable\\liber_button.xml"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\drawable_megaphone.png.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\drawable\\megaphone.png"
     },
     {
-        "merged": "D:\\a\\Capstone-LIBER\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\font_pacifico_regular.ttf.flat",
-        "source": "D:\\a\\Capstone-LIBER\\Capstone\\app\\src\\main\\res\\font\\pacifico_regular.ttf"
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Akhne\\Desktop\\Capstone1\\Capstone\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     }
 ]
