@@ -19,10 +19,12 @@
     <string name="kelas">A7</string>
     <string name="hariBorder">senin, 9:00 – 10:40</string>
     <string name="namaBorder">Akhner Frisca</string>
-    <string name="hari_jam">senin, 9:00 – 10:40</string>
+    <string name="hari_jam">Senin, 9:00 – 10:40</string>
     <string name="pertemuan">Pertemuan 1</string>
     <string name="tanggal">6 desember 2021</string>
     <string name="materi">Limit Fungsi</string>
     <string name="status_kehadiran">status kehadiran:</string>
+    <string name="pengajar">Budi, M.Pd</string>
+    <string name="jam">09:00 – 10:40</string>
 
 </resources>
