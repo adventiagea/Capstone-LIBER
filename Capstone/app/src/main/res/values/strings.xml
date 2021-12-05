@@ -27,4 +27,9 @@
     <string name="pengajar">Budi, M.Pd</string>
     <string name="jam">09:00 – 10:40</string>
 
+    <string name="title_pengumuman">Pengumuman</string>
+    <string name="pengumuman">Diberitahukan kepada mahasiswa/i Universitas ABC bahwa aktifitas perkuliahan yang diadakan di area kampus harus mengikuti protokol kesehatan.</string>
+    <string name="ttd">TTD</string>
+    <string name="sumber">Rektor Universitas ABC</string>
+
 </resources>
