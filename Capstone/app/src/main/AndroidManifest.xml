@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".PertemuanListActivity"
+            android:name=".PelajaranActivity"
             android:exported="false"
-            android:label="@string/title_activity_pertemuan_list"
-            android:theme="@style/NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".PertemuanActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".UserActivity"
             android:exported="true" />
