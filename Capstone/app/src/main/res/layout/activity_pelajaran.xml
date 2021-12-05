@@ -49,4 +49,160 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.08" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.007">
+
+        <TextView
+            android:id="@+id/pertemuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pertemuan"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065" />
+
+        <TextView
+            android:id="@+id/name_pelajaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/mata_kuliah"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/pertemuan"
+            app:layout_constraintStart_toStartOf="@+id/pertemuan"
+            app:layout_constraintTop_toBottomOf="@+id/pertemuan" />
+
+        <TextView
+            android:id="@+id/code_pelajaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kode_kelas"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/name_pelajaran"
+            app:layout_constraintStart_toStartOf="@+id/name_pelajaran"
+            app:layout_constraintTop_toBottomOf="@+id/name_pelajaran" />
+
+        <TextView
+            android:id="@+id/time_pelajaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hari_jam"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/code_pelajaran"
+            app:layout_constraintStart_toStartOf="@+id/code_pelajaran"
+            app:layout_constraintTop_toBottomOf="@+id/code_pelajaran" />
+
+        <TextView
+            android:id="@+id/pengajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/pengajar"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/time_pelajaran"
+            app:layout_constraintStart_toStartOf="@+id/time_pelajaran"
+            app:layout_constraintTop_toBottomOf="@+id/time_pelajaran" />
+
+        <Button
+            android:id="@+id/absen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_regular"
+            android:paddingStart="25dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="12dp"
+            android:text="@string/absen"
+            android:textAllCaps="false"
+            android:textColor="@color/general"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/pengajar"
+            app:layout_constraintStart_toStartOf="@+id/pengajar"
+            app:layout_constraintTop_toBottomOf="@+id/pengajar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="15dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <TextView
+            android:id="@+id/kegiatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kegiatan"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/isi_kegiatan"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/tugas"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kegiatan" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_regular"
+            android:layout_marginTop="10dp"
+            android:paddingStart="25dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="12dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/general"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="@+id/isi_kegiatan"
+            app:layout_constraintStart_toStartOf="@+id/isi_kegiatan"
+            app:layout_constraintTop_toBottomOf="@+id/isi_kegiatan" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
