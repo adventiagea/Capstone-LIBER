@@ -25,6 +25,8 @@ class UserActivity : AppCompatActivity() {
             R.drawable.calendar,
             R.drawable.megaphone
         )
+
+        var EXTRA_USER = "extra_user"
     }
     //private var menu : Menu ?= null
 
@@ -33,19 +35,29 @@ class UserActivity : AppCompatActivity() {
         userBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(userBinding.root)
 
+        val tabs = userBinding.tab
+        val viewPager = userBinding.viewPager
         val detailBundle = Bundle()
-        val tabAdapter = SectionsPagerAdapter(this,detailBundle)
+        val intent = intent.getStringExtra(EXTRA_USER)
 
-        val sectionsPagerAdapter = SectionsPagerAdapter(this)
-        val viewPager: ViewPager = findViewById(R.id.view_pager)
+        detailBundle.putString(EXTRA_USER, intent)
 
-        viewPager.adapter = tabAdapter
+        val sectionsPagerAdapter = SectionsPagerAdapter(this, detailBundle)
 
         viewPager.adapter = sectionsPagerAdapter
-        val tabs: TabLayout = findViewById(R.id.tab)
         TabLayoutMediator(tabs, viewPager) { tab,position ->
-            tab.text = resources.getString(TAB_TITLES[position])
+            when (position) {
+                0 -> {
+                    tab.text = null
+                    tab.setIcon(R.drawable.calendar)
+                }
+                1 -> {
+                    tab.text = null
+                    tab.setIcon(R.drawable.megaphone)
+                }
+            }
         }.attach()
+
         supportActionBar?.elevation = 0f
 
         val myToolbar = findViewById<Toolbar>(R.id.toolbar)
