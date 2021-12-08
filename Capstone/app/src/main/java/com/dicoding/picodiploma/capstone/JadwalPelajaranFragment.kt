@@ -17,21 +17,19 @@ import com.squareup.okhttp.internal.DiskLruCache
 class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
 
     private var pelajaranBinding: FragmentJadwalPelajaranBinding?= null
-    private val binding get() = pelajaranBinding!!
-
     private lateinit var dbref : DatabaseReference
-    private lateinit var rvPertemuan : RecyclerView
     private var list = ArrayList<PelajaranData>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_jadwal_pelajaran)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        rvPertemuan = findViewById(R.id.jadwal_rv)
-        rvPertemuan.layoutManager = LinearLayoutManager(this)
-        rvPertemuan.setHasFixedSize(true)
+        pelajaranBinding = FragmentJadwalPelajaranBinding.bind(view)
 
-        list = arrayListOf<PelajaranData>()
+        val rvPertemuan = pelajaranBinding?.jadwalRv
+        rvPertemuan?.layoutManager = LinearLayoutManager(activity)
+        rvPertemuan?.setHasFixedSize(true)
+
+        list = arrayListOf()
         getUserData()
     }
 
@@ -48,7 +46,9 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
                         list.add(user!!)
 
                     }
-                    rvPertemuan.adapter = PelajaranAdapter(list)
+
+                    val rvPertemuan = pelajaranBinding?.jadwalRv
+                    rvPertemuan?.adapter = PelajaranAdapter(list)
                 }
             }
 
