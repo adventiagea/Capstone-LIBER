@@ -10,7 +10,7 @@ import com.dicoding.picodiploma.capstone.databinding.ListPelajaranBinding
 
 class PelajaranAdapter(private val list:ArrayList<PelajaranData>) : RecyclerView.Adapter<PelajaranAdapter.ListViewHolder>(){
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvNampel: TextView = itemView.findViewById(R.id.name_pelajaran)
         val tvKodpel: TextView = itemView.findViewById(R.id.code_pelajaran)
         val tvDosen: TextView = itemView.findViewById(R.id.lecture_pelajaran)
@@ -27,11 +27,11 @@ class PelajaranAdapter(private val list:ArrayList<PelajaranData>) : RecyclerView
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val currentitem = list[position]
 
-        holder.tvNampel.text = currentitem.class_name
-        holder.tvKodpel.text = currentitem.class_code
-        holder.tvDosen.text = currentitem.class_lecture
-        holder.tvJam.text = currentitem.class_time
-        holder.tvHari.text = currentitem.class_date
+        holder.tvNampel.text = currentitem.matkul
+        holder.tvKodpel.text = currentitem.Kelas
+        holder.tvDosen.text = currentitem.Nama
+        holder.tvJam.text = currentitem.Jam
+        holder.tvHari.text = currentitem.Hari
     }
 
     override fun getItemCount(): Int {
