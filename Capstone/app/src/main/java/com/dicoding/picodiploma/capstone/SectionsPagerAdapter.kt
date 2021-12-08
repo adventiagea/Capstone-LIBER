@@ -19,6 +19,5 @@ class SectionsPagerAdapter (activity:AppCompatActivity, bundle: Bundle) :
         fragment?.arguments = this.myBundle
         return fragment as Fragment
     }
-
     override fun getItemCount(): Int = 2
 }

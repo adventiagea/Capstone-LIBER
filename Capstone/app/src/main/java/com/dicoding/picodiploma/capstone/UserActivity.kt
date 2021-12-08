@@ -10,15 +10,20 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toolbar
 import androidx.annotation.StringRes
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.capstone.databinding.ActivityUserBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class UserActivity : AppCompatActivity() {
     private lateinit var userBinding : ActivityUserBinding
+
     companion object {
         @StringRes
         private val TAB_TITLES = intArrayOf(
@@ -60,6 +65,8 @@ class UserActivity : AppCompatActivity() {
 
         supportActionBar?.elevation = 0f
 
+
+
         val myToolbar = findViewById<Toolbar>(R.id.toolbar)
         val iconToolbar = resources.getDrawable(R.drawable.ic_setting)
 
@@ -78,6 +85,8 @@ class UserActivity : AppCompatActivity() {
          */
 
     }
+
+
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
