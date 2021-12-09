@@ -8,18 +8,13 @@ import android.view.ViewGroup
 import com.dicoding.picodiploma.capstone.databinding.FragmentPengumumanBinding
 import com.google.firebase.storage.StorageReference
 
-class PengumumanFragment : Fragment() {
+class PengumumanFragment : Fragment(R.layout.fragment_pengumuman) {
     private var pengumumanBinding: FragmentPengumumanBinding ?= null
-    private val binding get() = pengumumanBinding!!
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        pengumumanBinding = FragmentPengumumanBinding.inflate(inflater, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-
-        return binding.root
+        pengumumanBinding = FragmentPengumumanBinding.bind(view)
     }
 
 }
