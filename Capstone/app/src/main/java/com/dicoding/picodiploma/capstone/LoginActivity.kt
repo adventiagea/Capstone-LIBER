@@ -45,7 +45,9 @@ class LoginActivity : AppCompatActivity() {
 
 
                 if (usernameInput==usernameData && passwordInput == passwordData){
-                    val intent = Intent(this, UserActivity::class.java)
+                    val intent = Intent(this, UserActivity::class.java).also { intent ->
+                        intent.putExtra(UserActivity.EXTRA_USER, usernameData)
+                    }
 
                     startActivity(intent)
                 }

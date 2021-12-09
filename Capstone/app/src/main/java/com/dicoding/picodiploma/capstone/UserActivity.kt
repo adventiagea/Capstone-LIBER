@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import android.widget.Toolbar
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,22 +24,32 @@ import com.google.firebase.database.FirebaseDatabase
 
 class UserActivity : AppCompatActivity() {
     private lateinit var userBinding : ActivityUserBinding
+    private lateinit var user : String
+    private lateinit var userDB : DatabaseReference
 
     companion object {
-        @StringRes
-        private val TAB_TITLES = intArrayOf(
-            R.drawable.calendar,
-            R.drawable.megaphone
-        )
-
         var EXTRA_USER = "extra_user"
     }
-    //private var menu : Menu ?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         userBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(userBinding.root)
+
+        userDB = FirebaseDatabase.getInstance().getReference("User")
+        user = intent.getStringExtra(EXTRA_USER).toString()
+
+        userDB.child(user).get().addOnSuccessListener {
+            if (it.exists()){
+                val usernameData = it.child("id").value.toString()
+                val nameData = it.child("name").value.toString()
+
+                userBinding.idUser.text = usernameData
+                userBinding.nameUser.text = nameData
+            }
+        }.addOnFailureListener {
+                Toast.makeText(this, "User doesn't exist!", Toast.LENGTH_SHORT).show()
+        }
 
         val tabs = userBinding.tab
         val viewPager = userBinding.viewPager
@@ -65,8 +76,6 @@ class UserActivity : AppCompatActivity() {
 
         supportActionBar?.elevation = 0f
 
-
-
         val myToolbar = findViewById<Toolbar>(R.id.toolbar)
         val iconToolbar = resources.getDrawable(R.drawable.ic_setting)
 
@@ -75,19 +84,7 @@ class UserActivity : AppCompatActivity() {
             myToolbar.overflowIcon = iconToolbar
         }
 
-        /*
-        userBinding.apply {
-            Glide.with(this@UserActivity)
-                .load(R.drawable.person)
-                .into(image)
-        }
-
-         */
-
     }
-
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
