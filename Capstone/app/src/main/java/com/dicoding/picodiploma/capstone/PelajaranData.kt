@@ -5,6 +5,5 @@ data class PelajaranData(
     val Kelas: String ?= null,
     val Nama: String ?= null,
     val Jam: String ?= null,
-    val Hari : String ?= null,
-    val Pertemuan : Int ?= null
+    val Hari : String ?= null
 )

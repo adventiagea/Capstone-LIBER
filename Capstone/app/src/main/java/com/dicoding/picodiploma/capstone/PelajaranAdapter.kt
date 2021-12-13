@@ -1,12 +1,11 @@
 package com.dicoding.picodiploma.capstone
 
-import android.icu.text.Transliterator
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.dicoding.picodiploma.capstone.databinding.ListPelajaranBinding
 
 class PelajaranAdapter(private val list:ArrayList<PelajaranData>) : RecyclerView.Adapter<PelajaranAdapter.ListViewHolder>(){
 
@@ -16,7 +15,6 @@ class PelajaranAdapter(private val list:ArrayList<PelajaranData>) : RecyclerView
         val tvDosen: TextView = itemView.findViewById(R.id.lecture_pelajaran)
         val tvHari: TextView = itemView.findViewById(R.id.day)
         val tvJam: TextView = itemView.findViewById(R.id.hour)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -32,6 +30,14 @@ class PelajaranAdapter(private val list:ArrayList<PelajaranData>) : RecyclerView
         holder.tvDosen.text = currentitem.Nama
         holder.tvJam.text = currentitem.Jam
         holder.tvHari.text = currentitem.Hari
+
+        holder.itemView.setOnClickListener {
+
+            val intent = Intent(holder.itemView.context, PertemuanActivity::class.java)
+            intent.putExtra(PertemuanActivity.EXTRA_MATKUL_PERTEMUAN, currentitem.matkul.toString())
+
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {

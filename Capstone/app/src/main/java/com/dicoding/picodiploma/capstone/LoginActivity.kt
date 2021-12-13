@@ -28,8 +28,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter username and password!", Toast.LENGTH_SHORT).show()
             }
         }
-
-
     }
 
     private fun readDataUsername(username: String){
@@ -43,12 +41,9 @@ class LoginActivity : AppCompatActivity() {
                 val usernameData = it.child("id").value.toString()
                 val passwordData = it.child("pass").value.toString()
 
-
                 if (usernameInput==usernameData && passwordInput == passwordData){
-                    val intent = Intent(this, UserActivity::class.java).also { intent ->
-                        intent.putExtra(UserActivity.EXTRA_USER, usernameData)
-                    }
-
+                    val intent = Intent(this, UserActivity::class.java)
+                    intent.putExtra("user", usernameData)
                     startActivity(intent)
                 }
                 else {

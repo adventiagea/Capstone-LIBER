@@ -12,6 +12,10 @@ import com.dicoding.picodiploma.capstone.databinding.ActivityPelajaranBinding
 class PelajaranActivity : AppCompatActivity() {
     private lateinit var pelajaranBinding: ActivityPelajaranBinding
 
+    companion object {
+        var EXTRA_PELAJARAN = "extra_pelajaran"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         pelajaranBinding = ActivityPelajaranBinding.inflate(layoutInflater)

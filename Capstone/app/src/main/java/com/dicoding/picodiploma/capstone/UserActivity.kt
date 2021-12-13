@@ -28,7 +28,7 @@ class UserActivity : AppCompatActivity() {
     private lateinit var userDB : DatabaseReference
 
     companion object {
-        var EXTRA_USER = "extra_user"
+        const val EXTRA_USER = "extra_user"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +37,7 @@ class UserActivity : AppCompatActivity() {
         setContentView(userBinding.root)
 
         userDB = FirebaseDatabase.getInstance().getReference("User")
-        user = intent.getStringExtra(EXTRA_USER).toString()
+        user = intent.getStringExtra("user").toString()
 
         userDB.child(user).get().addOnSuccessListener {
             if (it.exists()){

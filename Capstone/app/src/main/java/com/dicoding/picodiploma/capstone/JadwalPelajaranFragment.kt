@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,24 +20,35 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
     private var pelajaranBinding: FragmentJadwalPelajaranBinding?= null
     private lateinit var dbref : DatabaseReference
     private var list = ArrayList<PelajaranData>()
+    private lateinit var userSchedule : String
+
+    companion object{
+        const val EXTRA_USER_JADWAL = "extra_user_jadwal"
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         pelajaranBinding = FragmentJadwalPelajaranBinding.bind(view)
 
-        val rvPertemuan = pelajaranBinding?.jadwalRv
-        rvPertemuan?.layoutManager = LinearLayoutManager(activity)
-        rvPertemuan?.setHasFixedSize(true)
+        userSchedule = activity?.intent?.getStringExtra("user").toString()
+        Toast.makeText(activity, userSchedule, Toast.LENGTH_SHORT).show()
+
+        val pelajaranRV = pelajaranBinding?.jadwalRv
+        pelajaranRV?.layoutManager = LinearLayoutManager(activity)
+        pelajaranRV?.setHasFixedSize(true)
 
         list = arrayListOf()
         getUserData()
     }
 
     private fun getUserData() {
-        dbref = FirebaseDatabase.getInstance().getReference("Mata Kuliah")
+        dbref = FirebaseDatabase.getInstance().getReference("User")
 
-        dbref.addValueEventListener(object : ValueEventListener {
+        val child1 = dbref.child(userSchedule)
+        val child2 = child1.child("Mata Kuliah")
+
+        child2.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
 
@@ -47,8 +59,8 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
 
                     }
 
-                    val rvPertemuan = pelajaranBinding?.jadwalRv
-                    rvPertemuan?.adapter = PelajaranAdapter(list)
+                    val pelajaranRV = pelajaranBinding?.jadwalRv
+                    pelajaranRV?.adapter = PelajaranAdapter(list)
                 }
             }
 
