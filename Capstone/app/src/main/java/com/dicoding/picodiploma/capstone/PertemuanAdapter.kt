@@ -28,7 +28,7 @@ class PertemuanAdapter(private val pertemuanList : ArrayList<PertemuanData>) : R
         holder.waktu.text = item.tanggal
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, PelajaranActivity::class.java)
+            val intent = Intent(holder.itemView.context, KegiatanBelajarActivity::class.java)
                 //it.putExtra(UserActivity.EXTRA_USER, holder.user.text)
                 //it.putExtra(PertemuanActivity.EXTRA_MATKUL, item.nama)
 
