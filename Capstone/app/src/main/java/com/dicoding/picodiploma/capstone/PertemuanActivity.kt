@@ -32,7 +32,7 @@ class PertemuanActivity : AppCompatActivity() {
 
         matkulPertemuan = intent.getStringExtra(EXTRA_MATKUL_PERTEMUAN).toString()
 
-        //Toast.makeText(this, user, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, user, Toast.LENGTH_SHORT).show()
 
         val myToolbar = findViewById<Toolbar>(R.id.toolbar)
         val iconToolbar = resources.getDrawable(R.drawable.ic_setting)
@@ -47,10 +47,37 @@ class PertemuanActivity : AppCompatActivity() {
         pertemuanRV.setHasFixedSize(true)
 
         list = arrayListOf()
-        getUserData()
+        getPertemuanData()
+        getJadwalData()
     }
 
-    private fun getUserData() {
+    private fun getJadwalData(){
+        dbref = FirebaseDatabase.getInstance().getReference("User")
+
+        val child1 = dbref.child("0002")
+        val child2 = child1.child("Mata Kuliah")
+
+        child2.child(matkulPertemuan).get().addOnSuccessListener {
+            if (it.exists()){
+                val name = it.child("matkul").value.toString()
+                val code = it.child("Kelas").value.toString()
+                val day = it.child("Hari").value.toString()
+                val time = it.child("Jam").value.toString()
+                val teacher = it.child("Nama").value.toString()
+
+                pertemuanBinding.apply {
+                    namePelajaran.text = name
+                    codePelajaran.text = code
+                    timePelajaran.text = StringBuilder("$day, $time")
+                    lecturePelajaran.text = teacher
+                }
+            }
+        }.addOnFailureListener {
+            Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun getPertemuanData() {
         dbref = FirebaseDatabase.getInstance().getReference("User")
         //dbref = FirebaseDatabase.getInstance().getReference("Pertemuan")
 
