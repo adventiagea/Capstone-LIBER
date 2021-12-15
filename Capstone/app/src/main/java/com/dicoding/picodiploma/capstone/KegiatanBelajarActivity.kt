@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -11,12 +12,16 @@ import android.widget.Toolbar
 import com.dicoding.picodiploma.capstone.databinding.ActivityPelajaranBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 
 class KegiatanBelajarActivity : AppCompatActivity() {
     private lateinit var pelajaranBinding: ActivityPelajaranBinding
     private lateinit var dbref : DatabaseReference
+    private lateinit var myStorage : StorageReference
     private lateinit var pertemuanValue : String
     private lateinit var pelajaranValue : String
+    private val value = 1
 
     companion object {
         const val EXTRA_PERTEMUAN = "extra_pertemuan"
@@ -38,6 +43,16 @@ class KegiatanBelajarActivity : AppCompatActivity() {
 
         pertemuanValue = intent.getStringExtra(EXTRA_PERTEMUAN).toString()
         pelajaranValue = intent.getStringExtra(EXTRA_NAME).toString()
+
+        myStorage = FirebaseStorage.getInstance().reference.child("ini")
+
+        pelajaranBinding.submitButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+
+            intent.type = "application/pdf"
+
+            startActivityForResult(intent, value)
+        }
 
         getData()
     }
@@ -67,6 +82,25 @@ class KegiatanBelajarActivity : AppCompatActivity() {
             }
         }.addOnFailureListener {
             Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private fun submitFile(){
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == value){
+            if (requestCode == RESULT_OK) {
+                val myFile = data!!.data
+                val myFileName : StorageReference = myStorage.child("pdf"+myFile!!.lastPathSegment)
+
+                myFileName.putFile(myFile).addOnSuccessListener {
+                    Toast.makeText(this, "Upload Success!", Toast.LENGTH_SHORT).show()
+                }
+            }
         }
     }
 
