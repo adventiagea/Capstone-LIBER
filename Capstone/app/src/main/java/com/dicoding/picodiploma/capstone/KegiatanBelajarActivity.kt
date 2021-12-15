@@ -48,9 +48,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
 
         pelajaranBinding.submitButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
-
             intent.type = "application/pdf"
-
             startActivityForResult(intent, value)
         }
 
@@ -93,7 +91,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == value){
-            if (requestCode == RESULT_OK) {
+            if (resultCode == RESULT_OK) {
                 val myFile = data!!.data
                 val myFileName : StorageReference = myStorage.child("pdf"+myFile!!.lastPathSegment)
 
