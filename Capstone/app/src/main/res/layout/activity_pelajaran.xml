@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/general"
     android:paddingBottom="5dp"
-    tools:context=".PelajaranActivity">
+    tools:context=".KegiatanBelajarActivity">
 
     <Toolbar
         android:id="@+id/toolbar"

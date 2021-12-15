@@ -9,12 +9,8 @@ import android.view.MenuItem
 import android.widget.Toolbar
 import com.dicoding.picodiploma.capstone.databinding.ActivityPelajaranBinding
 
-class PelajaranActivity : AppCompatActivity() {
+class KegiatanBelajarActivity : AppCompatActivity() {
     private lateinit var pelajaranBinding: ActivityPelajaranBinding
-
-    companion object {
-        var EXTRA_PELAJARAN = "extra_pelajaran"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
