@@ -29,8 +29,8 @@ class PertemuanAdapter(private val pertemuanList : ArrayList<PertemuanData>) : R
 
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, KegiatanBelajarActivity::class.java)
-                //it.putExtra(UserActivity.EXTRA_USER, holder.user.text)
-                //it.putExtra(PertemuanActivity.EXTRA_MATKUL, item.nama)
+            intent.putExtra(KegiatanBelajarActivity.EXTRA_PERTEMUAN, item.nama.toString())
+            intent.putExtra(KegiatanBelajarActivity.EXTRA_NAME, item.matkul.toString())
 
             holder.itemView.context.startActivity(intent)
         }
