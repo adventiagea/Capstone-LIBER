@@ -44,7 +44,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         pertemuanValue = intent.getStringExtra(EXTRA_PERTEMUAN).toString()
         pelajaranValue = intent.getStringExtra(EXTRA_NAME).toString()
 
-        myStorage = FirebaseStorage.getInstance().reference.child("ini")
+        myStorage = FirebaseStorage.getInstance().reference.child(pelajaranValue).child(pertemuanValue)
 
         pelajaranBinding.submitButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
