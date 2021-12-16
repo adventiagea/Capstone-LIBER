@@ -49,6 +49,7 @@ class PertemuanActivity : AppCompatActivity() {
         list = arrayListOf()
         getPertemuanData()
         getJadwalData()
+        goHome()
     }
 
     private fun getJadwalData(){
@@ -107,6 +108,12 @@ class PertemuanActivity : AppCompatActivity() {
                 Toast.makeText(this@PertemuanActivity, "database error", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    private fun goHome(){
+        pertemuanBinding.title.setOnClickListener {
+            super.onBackPressed()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

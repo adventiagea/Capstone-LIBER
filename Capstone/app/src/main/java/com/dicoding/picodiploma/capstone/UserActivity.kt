@@ -1,11 +1,14 @@
 package com.dicoding.picodiploma.capstone
 
+import android.app.Activity
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.media.Image
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -21,11 +24,13 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlin.system.exitProcess
 
 class UserActivity : AppCompatActivity() {
     private lateinit var userBinding : ActivityUserBinding
     private lateinit var user : String
     private lateinit var userDB : DatabaseReference
+    private var clickedValue: Boolean = false
 
     companion object {
         const val EXTRA_USER = "extra_user"
@@ -65,11 +70,11 @@ class UserActivity : AppCompatActivity() {
             when (position) {
                 0 -> {
                     tab.text = null
-                    tab.setIcon(R.drawable.calendar)
+                    tab.setIcon(R.drawable.calendar_white)
                 }
                 1 -> {
                     tab.text = null
-                    tab.setIcon(R.drawable.megaphone)
+                    tab.setIcon(R.drawable.megaphone_white)
                 }
             }
         }.attach()
@@ -84,6 +89,19 @@ class UserActivity : AppCompatActivity() {
             myToolbar.overflowIcon = iconToolbar
         }
 
+    }
+
+    override fun onBackPressed() {
+        if (clickedValue) {
+
+            this.finishAffinity()
+            exitProcess(0)
+            return
+        }
+        this.clickedValue = true
+        val exitText = resources.getText(R.string.exit)
+        Toast.makeText(this, exitText, Toast.LENGTH_SHORT).show()
+        Handler(Looper.getMainLooper()).postDelayed({ clickedValue = false }, 2000)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

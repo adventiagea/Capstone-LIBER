@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -46,13 +48,9 @@ class KegiatanBelajarActivity : AppCompatActivity() {
 
         myStorage = FirebaseStorage.getInstance().reference.child(pelajaranValue).child(pertemuanValue)
 
-        pelajaranBinding.submitButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "application/pdf"
-            startActivityForResult(intent, value)
-        }
-
         getData()
+        submitFile()
+        goHome()
     }
 
     private fun getData(){
@@ -84,8 +82,23 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     }
 
     private fun submitFile(){
+        pelajaranBinding.submitButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "application/pdf"
+            startActivityForResult(intent, value)
+        }
+    }
+
+    private fun absen(){
 
     }
+
+    private fun goHome(){
+        pelajaranBinding.title.setOnClickListener {
+            super.onBackPressed()
+        }
+    }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
