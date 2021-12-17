@@ -14,6 +14,11 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
+import java.util.*
 
 class KegiatanBelajarActivity : AppCompatActivity() {
     private lateinit var pelajaranBinding: ActivityPelajaranBinding
@@ -45,6 +50,17 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         pelajaranValue = intent.getStringExtra(EXTRA_NAME).toString()
 
         myStorage = FirebaseStorage.getInstance().reference.child("ini")
+
+        pelajaranBinding.absenButton.setOnClickListener {
+            val tanggalVar = SimpleDateFormat("dd/M/yyyy")
+            val jamVar = SimpleDateFormat("hh:mm")
+            val currentDate = tanggalVar.format(Date())
+            val currentDate2 = jamVar.format(Date())
+
+            pelajaranBinding.tanggalView.text = currentDate
+            pelajaranBinding.waktuView.text = currentDate2
+
+        }
 
         pelajaranBinding.submitButton.setOnClickListener {
             val intent = Intent(Intent.ACTION_GET_CONTENT)
