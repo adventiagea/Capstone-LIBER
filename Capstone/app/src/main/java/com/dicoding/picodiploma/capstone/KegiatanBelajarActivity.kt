@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -16,6 +14,11 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
+import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
+import java.util.*
 
 class KegiatanBelajarActivity : AppCompatActivity() {
     private lateinit var pelajaranBinding: ActivityPelajaranBinding
@@ -46,11 +49,26 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         pertemuanValue = intent.getStringExtra(EXTRA_PERTEMUAN).toString()
         pelajaranValue = intent.getStringExtra(EXTRA_NAME).toString()
 
-        myStorage = FirebaseStorage.getInstance().reference.child(pelajaranValue).child(pertemuanValue)
+        myStorage = FirebaseStorage.getInstance().reference.child("ini")
+
+        pelajaranBinding.absenButton.setOnClickListener {
+            val tanggalVar = SimpleDateFormat("dd/M/yyyy")
+            val jamVar = SimpleDateFormat("hh:mm")
+            val currentDate = tanggalVar.format(Date())
+            val currentDate2 = jamVar.format(Date())
+
+            pelajaranBinding.tanggalView.text = currentDate
+            pelajaranBinding.waktuView.text = currentDate2
+
+        }
+
+        pelajaranBinding.submitButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "application/pdf"
+            startActivityForResult(intent, value)
+        }
 
         getData()
-        submitFile()
-        goHome()
     }
 
     private fun getData(){
@@ -82,23 +100,8 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     }
 
     private fun submitFile(){
-        pelajaranBinding.submitButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "application/pdf"
-            startActivityForResult(intent, value)
-        }
-    }
-
-    private fun absen(){
 
     }
-
-    private fun goHome(){
-        pelajaranBinding.title.setOnClickListener {
-            super.onBackPressed()
-        }
-    }
-
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
