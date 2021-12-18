@@ -36,6 +36,8 @@
     <string name="submit">Submit</string>
     <string name="kegiatan">Aktifitas Pembelajaran</string>
     <string name="tugas">Kerjakan soal di link GDrive ini, lalu buat di kertas double folio dan upload dalam bentuk pdf. *</string>
+    <string name="tanggal_view">Tanggal</string>
+    <string name="waktu_view">Waktu</string>
 
     <string name="exit">Press back again to exit application</string>
 </resources>
