@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -15,9 +14,9 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import java.text.SimpleDateFormat
+import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 import java.util.*
 
 class KegiatanBelajarActivity : AppCompatActivity() {
@@ -27,6 +26,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     private lateinit var pertemuanValue : String
     private lateinit var pelajaranValue : String
     private val value = 1
+    private val absenValue = false
 
     companion object {
         const val EXTRA_PERTEMUAN = "extra_pertemuan"
@@ -49,8 +49,9 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         pertemuanValue = intent.getStringExtra(EXTRA_PERTEMUAN).toString()
         pelajaranValue = intent.getStringExtra(EXTRA_NAME).toString()
 
-        myStorage = FirebaseStorage.getInstance().reference.child("ini")
+        myStorage = FirebaseStorage.getInstance().reference.child(pelajaranValue).child(pertemuanValue).child("0002")
 
+        /*
         pelajaranBinding.absenButton.setOnClickListener {
             val tanggalVar = SimpleDateFormat("dd/M/yyyy")
             val jamVar = SimpleDateFormat("hh:mm")
@@ -62,13 +63,21 @@ class KegiatanBelajarActivity : AppCompatActivity() {
 
         }
 
-        pelajaranBinding.submitButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "application/pdf"
-            startActivityForResult(intent, value)
+         */
+        val jam = pelajaranBinding.waktuView
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+            val date = LocalDateTime.now()
+            val pattern = "EEEE, dd MMMM yyyy HH:mm:ss"
+            val formatDate = DateTimeFormatter.ofPattern(pattern)
+            val dayTime = formatDate.format(date)
+
+            jam.text = dayTime
         }
 
+        submitFile()
         getData()
+        absen()
     }
 
     private fun getData(){
@@ -92,7 +101,10 @@ class KegiatanBelajarActivity : AppCompatActivity() {
                     timePelajaran.text = StringBuilder("$day, $time")
                     pengajar.text = teacher
 
+
                 }
+
+
             }
         }.addOnFailureListener {
             Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
@@ -100,6 +112,45 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     }
 
     private fun submitFile(){
+        pelajaranBinding.submitButton.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "application/pdf"
+            startActivityForResult(intent, value)
+        }
+    }
+
+    private fun absen(){
+        dbref = FirebaseDatabase.getInstance().getReference("User")
+
+        val child1 = dbref.child("0002")
+        val child2 = child1.child("Perkuliahan")
+        val child3 = child2.child(pelajaranValue)
+        val child4 = child3.child("Pertemuan")
+        val child5 = child4.child(pertemuanValue)
+        val child6 = child5.child("status")
+
+        val tanggalVar = SimpleDateFormat("dd MMMM yyyy")
+        val jamVar = SimpleDateFormat("hh:mm")
+        val currentDate = tanggalVar.format(Date())
+        val currentDate2 = jamVar.format(Date())
+
+        val absenButton = pelajaranBinding.absenButton
+
+        absenButton.text = StringBuilder("Absen")
+        pelajaranBinding.absenButton.setOnClickListener {
+            absenButton.text = StringBuilder("Hadir")
+
+            child6.setValue("$currentDate, $currentDate2")
+        }
+
+
+    }
+
+    private fun absenButton(){
+        val absenButton = pelajaranBinding.absenButton
+        absenButton.text = StringBuilder("Absen")
+
+        absenButton.isClickable = absenValue
 
     }
 
