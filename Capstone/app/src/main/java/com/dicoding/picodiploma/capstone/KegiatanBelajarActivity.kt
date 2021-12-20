@@ -72,6 +72,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
             val formatDate = DateTimeFormatter.ofPattern(pattern)
             val dayTime = formatDate.format(date)
 
+
             jam.text = dayTime
         }
 
@@ -79,6 +80,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         getData()
         absen()
     }
+
 
     private fun getData(){
         dbref = FirebaseDatabase.getInstance().getReference("User")
@@ -133,10 +135,32 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         val jamVar = SimpleDateFormat("hh:mm")
         val currentDate = tanggalVar.format(Date())
         val currentDate2 = jamVar.format(Date())
+        val jamVarClose = SimpleDateFormat("HH")
+        val minuteVarClose = SimpleDateFormat("mm")
+        val currentHour = jamVarClose.format(Date())
+        val currentMinute = minuteVarClose.format(Date())
+
+        val childClose1 = child1.child("Mata Kuliah")
+        val childClose2 = childClose1.child(pelajaranValue)
+
+        childClose2.get().addOnSuccessListener {
+            if (it.exists()){
+                val hour = it.child("hour").value.toString()
+                val minute = it.child("minute").value.toString()
+
+                if (currentHour >= hour && currentMinute >= minute){
+                    pelajaranBinding.absenButton.isEnabled = false
+                    Toast.makeText(this, "Sorry Close", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
 
         val absenButton = pelajaranBinding.absenButton
 
         absenButton.text = StringBuilder("Absen")
+
+
+
         pelajaranBinding.absenButton.setOnClickListener {
             absenButton.text = StringBuilder("Hadir")
 
