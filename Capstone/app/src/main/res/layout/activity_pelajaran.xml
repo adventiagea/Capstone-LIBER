@@ -118,7 +118,6 @@
             android:id="@+id/pengajar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="@string/pengajar"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -131,7 +130,7 @@
             android:id="@+id/absen_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/lato_regular"
             android:paddingStart="25dp"
             android:paddingTop="5dp"
@@ -145,12 +144,25 @@
             app:layout_constraintStart_toStartOf="@+id/pengajar"
             app:layout_constraintTop_toBottomOf="@+id/pengajar" />
 
+        <TextView
+            android:id="@+id/waktuAbsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waktu_view"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/absen_button"
+            app:layout_constraintStart_toStartOf="@+id/absen_button"
+            app:layout_constraintTop_toBottomOf="@+id/absen_button"
+            app:layout_constraintVertical_bias="0.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
-        android:layout_width="384dp"
-        android:layout_height="364dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -211,14 +223,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/border"
+        android:layout_marginEnd="10dp"
         android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="@+id/constraintLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/waktuView"
@@ -226,7 +239,7 @@
             android:layout_height="wrap_content"
             android:text="@string/waktu_view"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

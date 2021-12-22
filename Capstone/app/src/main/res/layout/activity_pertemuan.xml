@@ -35,6 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </Toolbar>
 
     <View
@@ -49,12 +50,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.08" />
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:layout_marginTop="638dp"
+        android:layout_marginTop="477dp"
         android:background="@drawable/border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,22 +119,15 @@
             app:layout_constraintTop_toBottomOf="@+id/time_pelajaran" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pertemuan_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" >
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/pertemuan_rv"
-            android:layout_width="match_parent"
-            tools:listitem="@layout/list_pertemuan"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout"
+        tools:listitem="@layout/list_pertemuan" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
