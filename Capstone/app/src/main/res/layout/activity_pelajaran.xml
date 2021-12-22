@@ -8,7 +8,7 @@
     android:paddingBottom="5dp"
     tools:context=".KegiatanBelajarActivity">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <View
         android:id="@+id/view"
