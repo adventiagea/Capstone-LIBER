@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/notification"
-        android:orderInCategory="100"
+        android:id="@+id/menu_log_out"
         android:icon="@drawable/ic_setting"
-        android:title="@string/setting"
+        android:title="@string/log_out"
         app:showAsAction="never"/>
 
 </menu>
