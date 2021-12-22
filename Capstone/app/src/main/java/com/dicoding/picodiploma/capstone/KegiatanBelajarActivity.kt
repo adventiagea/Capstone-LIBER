@@ -131,27 +131,40 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         val child5 = child4.child(pertemuanValue)
         val child6 = child5.child("status")
 
-        val tanggalVar = SimpleDateFormat("dd MMMM yyyy")
-        val jamVar = SimpleDateFormat("hh:mm")
-        val currentDate = tanggalVar.format(Date())
-        val currentDate2 = jamVar.format(Date())
-        val jamVarClose = SimpleDateFormat("HH")
-        val minuteVarClose = SimpleDateFormat("mm")
-        val currentHour = jamVarClose.format(Date())
-        val currentMinute = minuteVarClose.format(Date())
+        val sdfDate = SimpleDateFormat("dd:M:yyyy")
+        val sdfHour = SimpleDateFormat("HH:mm")
+        val currentDate = sdfDate.format(Date())
+        val currentHour = sdfHour.format(Date())
 
-        val childClose1 = child1.child("Mata Kuliah")
-        val childClose2 = childClose1.child(pelajaranValue)
 
-        childClose2.get().addOnSuccessListener {
+        val childPerkuliahan = child1.child("Perkuliahan")
+        val childMatakuliah = childPerkuliahan.child(pelajaranValue)
+        val childPertemuan = childMatakuliah.child("Pertemuan")
+        val childValue = childPertemuan.child(pertemuanValue)
+
+        childValue.get().addOnSuccessListener {
             if (it.exists()){
                 val hour = it.child("hour").value.toString()
-                val minute = it.child("minute").value.toString()
+                val open = it.child("open").value.toString()
+                val date = it.child("close").value.toString()
 
-                if (currentHour >= hour && currentMinute >= minute){
+                if (currentDate == date){
+                    if(currentHour >= open){
+                        if (currentHour <= hour){
+                            pelajaranBinding.absenButton.isEnabled = true
+                        }else{
+                            pelajaranBinding.absenButton.isEnabled = false
+                            Toast.makeText(this, "Sorry Close", Toast.LENGTH_SHORT).show()
+                        }
+                    }else{
+                        pelajaranBinding.absenButton.isEnabled = false
+                        Toast.makeText(this, "Sorry Close", Toast.LENGTH_SHORT).show()
+                    }
+                }else{
                     pelajaranBinding.absenButton.isEnabled = false
                     Toast.makeText(this, "Sorry Close", Toast.LENGTH_SHORT).show()
                 }
+
             }
         }
 
@@ -164,7 +177,7 @@ class KegiatanBelajarActivity : AppCompatActivity() {
         pelajaranBinding.absenButton.setOnClickListener {
             absenButton.text = StringBuilder("Hadir")
 
-            child6.setValue("$currentDate, $currentDate2")
+            child6.setValue("$currentDate, $currentHour")
         }
 
 
