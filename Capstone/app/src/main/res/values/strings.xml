@@ -5,6 +5,7 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="notification">Notification</string>
+    <string name="setting">Setting</string>
 
     <string name="name_user">Name User</string>
     <string name="id_user">0001</string>
@@ -23,7 +24,7 @@
     <string name="pertemuan">Pertemuan 1</string>
     <string name="tanggal">6 desember 2021</string>
     <string name="materi">Limit Fungsi</string>
-    <string name="status_kehadiran">status kehadiran:</string>
+    <string name="status_kehadiran">Status Kehadiran:</string>
     <string name="pengajar">Budi, M.Pd</string>
     <string name="jam">09:00 – 10:40</string>
 
