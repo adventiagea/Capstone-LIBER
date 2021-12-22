@@ -1,5 +1,7 @@
 package com.dicoding.picodiploma.capstone
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.fragment.app.Fragment
@@ -22,17 +24,18 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
     private var list = ArrayList<PelajaranData>()
     private lateinit var userSchedule : String
 
-    companion object{
-        const val EXTRA_USER_JADWAL = "extra_user_jadwal"
-    }
+    lateinit var sharedPreferences: SharedPreferences
+    val PREFERENCES_NAME = "liber_preferences"
+    val KEY_USER = "key_user"
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         pelajaranBinding = FragmentJadwalPelajaranBinding.bind(view)
 
+        sharedPreferences = activity?.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)!!
+
         userSchedule = activity?.intent?.getStringExtra("user").toString()
-        Toast.makeText(activity, userSchedule, Toast.LENGTH_SHORT).show()
 
         val pelajaranRV = pelajaranBinding?.jadwalRv
         pelajaranRV?.layoutManager = LinearLayoutManager(activity)
@@ -42,10 +45,12 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
         getUserData()
     }
 
+    private fun getUser() : String? = sharedPreferences.getString(KEY_USER, null)
+
     private fun getUserData() {
         dbref = FirebaseDatabase.getInstance().getReference("User")
 
-        val child1 = dbref.child(userSchedule)
+        val child1 = dbref.child(getUser().toString())
         val child2 = child1.child("Mata Kuliah")
 
         child2.addValueEventListener(object : ValueEventListener {

@@ -1,7 +1,9 @@
 package com.dicoding.picodiploma.capstone
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.drawable.Drawable
 import android.media.Image
 import android.os.Build
@@ -28,23 +30,42 @@ import kotlin.system.exitProcess
 
 class UserActivity : AppCompatActivity() {
     private lateinit var userBinding : ActivityUserBinding
-    private lateinit var user : String
     private lateinit var userDB : DatabaseReference
     private var clickedValue: Boolean = false
 
-    companion object {
-        const val EXTRA_USER = "extra_user"
-    }
+    lateinit var sharedPreferences: SharedPreferences
+    val PREFERENCES_NAME = "liber_preferences"
+    val KEY_USER = "key_user"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         userBinding = ActivityUserBinding.inflate(layoutInflater)
         setContentView(userBinding.root)
 
-        userDB = FirebaseDatabase.getInstance().getReference("User")
-        user = intent.getStringExtra("user").toString()
+        sharedPreferences = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
 
-        userDB.child(user).get().addOnSuccessListener {
+        toolbar()
+        viewPager()
+    }
+
+    private fun toolbar(){
+        val myToolbar = userBinding.toolbar
+        val iconToolbar = resources.getDrawable(R.drawable.ic_setting)
+
+        myToolbar.inflateMenu(R.menu.menu)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            myToolbar.overflowIcon = iconToolbar
+        }
+        setSupportActionBar(myToolbar)
+    }
+
+    private fun getUser() : String? = sharedPreferences.getString(KEY_USER, null)
+
+    private fun viewPager(){
+
+        userDB = FirebaseDatabase.getInstance().getReference("User")
+
+        userDB.child(getUser().toString()).get().addOnSuccessListener {
             if (it.exists()){
                 val usernameData = it.child("id").value.toString()
                 val nameData = it.child("name").value.toString()
@@ -53,15 +74,15 @@ class UserActivity : AppCompatActivity() {
                 userBinding.nameUser.text = nameData
             }
         }.addOnFailureListener {
-                Toast.makeText(this, "User doesn't exist!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "User doesn't exist!", Toast.LENGTH_SHORT).show()
         }
 
         val tabs = userBinding.tab
         val viewPager = userBinding.viewPager
         val detailBundle = Bundle()
-        val intent = intent.getStringExtra(EXTRA_USER)
+        val intent = intent.getStringExtra(getUser().toString())
 
-        detailBundle.putString(EXTRA_USER, intent)
+        detailBundle.putString(getUser().toString(), intent)
 
         val sectionsPagerAdapter = SectionsPagerAdapter(this, detailBundle)
 
@@ -79,16 +100,6 @@ class UserActivity : AppCompatActivity() {
             }
         }.attach()
 
-        supportActionBar?.elevation = 0f
-
-        val myToolbar = findViewById<Toolbar>(R.id.toolbar)
-        val iconToolbar = resources.getDrawable(R.drawable.ic_setting)
-
-        myToolbar.inflateMenu(R.menu.menu)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            myToolbar.overflowIcon = iconToolbar
-        }
-
     }
 
     override fun onBackPressed() {
@@ -104,6 +115,20 @@ class UserActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({ clickedValue = false }, 2000)
     }
 
+    private fun clearUser(){
+        val user : SharedPreferences.Editor = sharedPreferences.edit()
+
+        user.clear()
+        user.apply()
+    }
+
+    private fun logOut(){
+        val intent = Intent(this, LoginActivity::class.java)
+
+        clearUser()
+        startActivity(intent)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu, menu)
 
@@ -112,10 +137,9 @@ class UserActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when(item.itemId) {
-            R.id.notification -> {
-                val intent = Intent(this, LoginActivity::class.java)
+            R.id.menu_log_out -> {
+                logOut()
 
-                startActivity(intent)
                 true
             }
 
