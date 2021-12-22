@@ -32,6 +32,8 @@ class PertemuanActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)
 
+        list = arrayListOf()
+
         toolbar()
         getPertemuanData()
         getJadwalData()
@@ -98,7 +100,7 @@ class PertemuanActivity : AppCompatActivity() {
                     for (mySnapshot in snapshot.children){
                         val mine = mySnapshot.getValue(PertemuanData::class.java)
 
-                        list = arrayListOf()
+
                         list.add(mine!!)
                     }
                     val pertemuanRV = pertemuanBinding.pertemuanRv

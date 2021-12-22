@@ -33,6 +33,8 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
 
         sharedPreferences = activity?.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)!!
 
+        list = arrayListOf()
+
         recyclerView()
         getUserData()
     }
@@ -59,7 +61,6 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
 
                         val user = userSnapshot.getValue(PelajaranData::class.java)
 
-                        list = arrayListOf()
                         list.add(user!!)
 
                     }
