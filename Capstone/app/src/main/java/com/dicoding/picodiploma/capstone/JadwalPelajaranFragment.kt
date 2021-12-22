@@ -22,7 +22,6 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
     private var pelajaranBinding: FragmentJadwalPelajaranBinding?= null
     private lateinit var dbref : DatabaseReference
     private var list = ArrayList<PelajaranData>()
-    private lateinit var userSchedule : String
 
     lateinit var sharedPreferences: SharedPreferences
     val PREFERENCES_NAME = "liber_preferences"
@@ -30,19 +29,18 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         pelajaranBinding = FragmentJadwalPelajaranBinding.bind(view)
 
         sharedPreferences = activity?.getSharedPreferences(PREFERENCES_NAME, Context.MODE_PRIVATE)!!
 
-        userSchedule = activity?.intent?.getStringExtra("user").toString()
+        recyclerView()
+        getUserData()
+    }
 
+    private fun recyclerView() {
         val pelajaranRV = pelajaranBinding?.jadwalRv
         pelajaranRV?.layoutManager = LinearLayoutManager(activity)
         pelajaranRV?.setHasFixedSize(true)
-
-        list = arrayListOf()
-        getUserData()
     }
 
     private fun getUser() : String? = sharedPreferences.getString(KEY_USER, null)
@@ -60,6 +58,8 @@ class JadwalPelajaranFragment : Fragment(R.layout.fragment_jadwal_pelajaran) {
                     for (userSnapshot in snapshot.children) {
 
                         val user = userSnapshot.getValue(PelajaranData::class.java)
+
+                        list = arrayListOf()
                         list.add(user!!)
 
                     }
