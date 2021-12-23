@@ -19,3 +19,13 @@ LIBER merupakan sebuah aplikasi Online Learning Management System yang berfungsi
 
 ### Tampilan Aplikasi: <br />
 ![Tampilan LIBER](https://user-images.githubusercontent.com/79997087/147283466-c015a824-5487-48d7-bb7c-7c9f5a88e3e9.png)
+
+### Cara penggunaan aplikasi:</br>
+1. Login menggunakan akun :
+   * Username : 0001 dan Password : 12345
+   * Username : 0002 dan Password : 54321
+2. Memilih salah satu mata pelajaran
+3. Memilih pertemuan
+4. Silahkan menggunakan fitur absen dan upload file (PDF)
+5. Logout
+*Note : Notifikasi pengingat jadwal akan muncul pada pukul 06:30 WIB, 08:00 WIB, 13:00 WIB dan 17:30 WIB
