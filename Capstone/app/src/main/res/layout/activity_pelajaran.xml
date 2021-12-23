@@ -217,6 +217,17 @@
             app:layout_constraintStart_toStartOf="@+id/isi_kegiatan"
             app:layout_constraintTop_toBottomOf="@+id/isi_kegiatan" />
 
+        <TextView
+            android:id="@+id/statusUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_upload"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/submit_button"
+            app:layout_constraintStart_toStartOf="@+id/submit_button"
+            app:layout_constraintTop_toBottomOf="@+id/submit_button" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

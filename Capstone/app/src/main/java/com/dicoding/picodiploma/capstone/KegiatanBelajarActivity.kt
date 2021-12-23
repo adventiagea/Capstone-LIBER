@@ -93,11 +93,37 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     }
 
     private fun submitFile(){
-        pelajaranBinding.submitButton.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "application/pdf"
-            startActivityForResult(intent, value)
+        dbref = FirebaseDatabase.getInstance().getReference("User")
+
+        val childUser = dbref.child(getUser().toString())
+        val childPerkuliahan = childUser.child("Perkuliahan")
+        val childMataKuliah = childPerkuliahan.child(getPelajaran().toString())
+        val childPertemuan = childMataKuliah.child("Pertemuan")
+        val childValue = childPertemuan.child(getPertemuan().toString())
+        val childStatus = childValue.child("file")
+
+        val sdfDate = SimpleDateFormat("dd:M:yyyy")
+        val sdfHour = SimpleDateFormat("HH:mm")
+        val currentDate = sdfDate.format(Date())
+        val currentHour = sdfHour.format(Date())
+
+        childValue.get().addOnSuccessListener {
+            if (it.exists()){
+                val fileStatus = it.child("file").value.toString()
+                pelajaranBinding.statusUpload.text = fileStatus
+
+                pelajaranBinding.submitButton.setOnClickListener {
+                    val intent = Intent(Intent.ACTION_GET_CONTENT)
+                    intent.type = "application/pdf"
+                    startActivityForResult(intent, value)
+
+                    childStatus.setValue("Uploaded $currentDate $currentHour")
+                }
+            }
+
         }
+
+
     }
 
     private fun absen(){
@@ -182,18 +208,49 @@ class KegiatanBelajarActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == value){
-            if (resultCode == RESULT_OK) {
-                val myFile = data!!.data
-                val myFileName : StorageReference = myStorage.child("pdf"+myFile!!.lastPathSegment)
+        dbref = FirebaseDatabase.getInstance().getReference("User")
 
-                myFileName.putFile(myFile).addOnSuccessListener {
-                    Toast.makeText(this, "Upload Success!", Toast.LENGTH_SHORT).show()
+        val childUser = dbref.child(getUser().toString())
+        val childPerkuliahan = childUser.child("Perkuliahan")
+        val childMataKuliah = childPerkuliahan.child(getPelajaran().toString())
+        val childPertemuan = childMataKuliah.child("Pertemuan")
+        val childValue = childPertemuan.child(getPertemuan().toString())
+        val childStatus = childValue.child("file")
+
+
+
+
+        val sdfDate = SimpleDateFormat("dd:M:yyyy")
+        val sdfHour = SimpleDateFormat("HH:mm")
+        val currentDate = sdfDate.format(Date())
+        val currentHour = sdfHour.format(Date())
+
+
+
+        childStatus.get().addOnSuccessListener {
+            if (it.exists()){
+
+                childStatus.setValue("File belum diupload")
+
+                if (requestCode == value){
+                    if (resultCode == RESULT_OK) {
+                        val myFile = data!!.data
+                        val myFileName : StorageReference = myStorage.child("pdf"+myFile!!.lastPathSegment)
+
+                        myFileName.putFile(myFile).addOnSuccessListener {
+
+                            childStatus.setValue("Uploaded $currentDate $currentHour")
+                            Toast.makeText(this, "Upload Success!", Toast.LENGTH_SHORT).show()
+                        }
+                    }
                 }
-            }
-        }
-    }
 
+            }
+
+        }
+
+
+    }
     private fun clearUser(){
         val user : SharedPreferences.Editor = sharedPreferences.edit()
 
