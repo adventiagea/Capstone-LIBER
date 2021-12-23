@@ -17,7 +17,7 @@ LIBER merupakan sebuah aplikasi Online Learning Management System yang berfungsi
 * Dataset link : https://capstone-383bc-default-rtdb.firebaseio.com/
 * Android Link : https://drive.google.com/file/d/1aGyyhmzPS4D3TNjXbBuUSwbNnxQKdbga/view?usp=sharing
 
-### Tampilan Applikasi: <br />
+### Tampilan Aplikasi: <br />
 
 
 
