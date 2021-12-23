@@ -27,5 +27,5 @@ LIBER merupakan sebuah aplikasi Online Learning Management System yang berfungsi
 2. Memilih salah satu mata pelajaran
 3. Memilih pertemuan
 4. Silahkan menggunakan fitur absen dan upload file (PDF)
-5. Logout
+5. Logout</br>
 *Note : Notifikasi pengingat jadwal akan muncul pada pukul 06:30 WIB, 08:00 WIB, 13:00 WIB dan 17:30 WIB
