@@ -6,7 +6,8 @@ Anggota Tim:</br>
 Adventia Hagani Gea - A265V6255</br>
 Akhner Frisca - A306R6318
 
-LIBER merupakan sebuah aplikasi Online Learning Management System yang berfungsi untuk menjadi media kegiatan belajar secara online untuk pelajar. Dimana pada saat pandemi, kegiatan pembelajaran seringkali dilaksanakan dengan sistem online. Akan tetapi, banyak dari instansi pendidikan tidak memiliki sistem pembelajaran online yang memadai, sehingga pelajar kesulitan untuk melakukan kegiatan belajar seperti absen dan mengumpulkan tugas.
+LIBER merupakan sebuah aplikasi Online Learning Management System yang berfungsi untuk menjadi media kegiatan belajar secara online untuk pelajar. Dimana pada saat pandemi, kegiatan pembelajaran seringkali dilaksanakan dengan sistem online. Karena kegiatan pembelajaran secara online, pelajar atau mahasiswa seringkali lupa akan kewajibannya yaitu menuntut ilmu. Disamping itu, banyak instansi pendidikan memiliki sistem pembelajaran online yg kurang memadai atau bahkan tidak memilikinya sama sekali
+
 
 ### Langkah-langkah dalam membangun aplikasi:</br>
 *  Mencari referensi tampilan UI dan membuat design UI di Figma, 		Mengkonfigurasikan Firebase sebagai database dan penyimpanan.
